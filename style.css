@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: inset 30px #a0b2c6;
+  background-color: #171717;
+  z-index: 0;
+}
+.container h1 {
+  font-size: 12em;
+  font-family: 'Rampart One', cursive;
+  color: #a0b2c6;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+.container h2 {
+  font-family: 'Rampart One', cursive;
+  z-index: 3;
+}
+.container h1::before {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 47.5%;
+  width: 2vw;
+  height: 75vh;
+  border-left: solid 2px #000;
+  border-right: solid 2px #000;
+  border-bottom: solid 2px #000;
+  background-color: #d8d8d8;
+  transform: rotate(30deg);
+
+}
+.container h1 span {
+  position: absolute;
+  color: #d8d8d8;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 1);
+  z-index: 3;
+
+}
+.container h1 span:nth-child(1) {
+  top: 0.8em;
+  left: 1.1em;
+}
+.container h1 span:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top:-149.5%;
+  right: -6.5%;
+  width: 2vw;
+  height: 71.5vh;
+  border-right: solid 2px #000;
+  background-color: #d8d8d8;
+  transform: rotate(-59deg);
+}
+.container h1 span:nth-child(2) {
+  bottom: 0.8em;
+  right: 1.1em;
+}
+.container h1 span:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  bottom:-148%;
+  left: 2%;
+  width: 2vw;
+  height: 70vh;
+  border-left: solid 2px #000;
+  background-color: #d8d8d8;
+  transform: rotate(-59deg);
+}
+.container .behindRich {
+  position: absolute;
+  background: red;
+  top: 2.5em;
+  left: 6.2em;
+  width: 50vw;
+  height: 60vh;
+  -webkit-clip-path: polygon(74% 0, 98% 24%, 72% 100%, 2% 87%, 12% 25%);
+  clip-path: polygon(74% 0, 98% 24%, 72% 100%, 2% 87%, 12% 25%);
+  z-index: 1;
+}
+.container .behindWerx {
+  position: absolute;
+  background: red;
+  bottom: 2.5em;
+  right: 7.6em;
+  width: 50vw;
+  height: 60vh;
+  -webkit-clip-path: polygon(91% 23%, 100% 68%, 25% 100%, 0 74%, 23% 5%);
+  clip-path: polygon(91% 23%, 100% 68%, 25% 100%, 0 74%, 23% 5%);
+}
+.container .webDevelopment {
+  position: absolute;
+  background-color: #c4cace;
+  top: 2.2em;
+  left: 2.2em;
+  width: 50vw;
+  height: 60vh;
+  -webkit-clip-path: polygon(82% 0, 0 0, 0 32.9%);
+  clip-path: polygon(82% 0, 0 0, 0 32.9%);
+  z-index: 2;
+}
+.container .webDevelopment h2 {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  font-size: 2em;
+  color: #000;
+  transform: rotate(-12deg);
+}
+.container .marketing {
+  position: absolute;
+  background-color: #c4cace;
+  bottom: 2.2em;
+  right: 2.2em;
+  width: 50vw;
+  height: 60vh;
+  -webkit-clip-path: polygon(14% 100%, 100% 100%, 100% 63.5%);
+clip-path: polygon(14% 100%, 100% 100%, 100% 63.5%);
+}
+.container .marketing h2 {
+  position: absolute;
+  bottom: 1.3em;
+  right: 1em;
+  font-size: 2em;
+  color: #000;
+  transform: rotate(-13deg);
+}
+
+.container .webDesign {
+  position: absolute;
+  background-color: #c4cace;
+  bottom: 2.2em;
+  left: 2.1em;
+  width: 47.5vw;
+  height: 60vh;
+  -webkit-clip-path: polygon(0 100%, 76% 77%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 100%, 76% 77%, 100% 100%, 0% 100%);
+  z-index: 2;
+}
+
+.container .webDesign h2 {
+  position: absolute;
+  bottom: .6em;
+  right: 6em;
+  font-size: 2em;
+  color: #000;
+  transform: rotate(-10deg);
+}
+.container .branding {
+  position: absolute;
+  background-color: #c4cace;
+  top:2.1em;
+  right: 2.1em;
+  width: 49.5vw;
+  height: 60vh;
+  -webkit-clip-path: polygon(0 0, 22% 22%, 100% 0);
+clip-path: polygon(0 0, 22% 22%, 100% 0);
+}
+.container .branding h2 {
+  position: absolute;
+  top: .5em;
+  right: 12em;
+  font-size: 2em;
+  color: #000;
+  transform: rotate(-10deg);
+}
+/* chrome pieces */
+.container .chromeSection1 {
+  position: absolute;
+  top: 20.6%;
+  left: 2.2em;
+  height: 71%;
+  width:9.8%;
+  background-color: #dbe4eb;
+  -webkit-clip-path: polygon(40% 3.9%, 100% 0, 0 100%, 0 100%, 0 6.5%);
+clip-path: polygon(40% 3.9%, 100% 0, 0 100%, 0 100%, 0 6.5%);
+}
+.container .chromeSection2 {
+  position: absolute;
+  top: 66%;
+  left: 2.3%;
+  height:28.5%;
+  width:40%;
+  background-color: #dbe4eb;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 89.5% 52%, 0 100%, 0 100%);
+clip-path: polygon(100% 0, 100% 0, 89.5% 52%, 0 100%, 0 100%);
+}
+.container .chromeSection3 {
+  position: absolute;
+  bottom: 6.5%;
+  left: 2.3%;
+  height:35.5%;
+  width:40%;
+  background-color: #c4cace;
+  -webkit-clip-path: polygon(12.5% 0, 100% 21.5%, 0 100%, 0 100%);
+clip-path: polygon(12.5% 0, 100% 21.5%, 0 100%, 0 100%);
+}
+.container .chromeSection4 {
+  position: absolute;
+  top: 5.3%;
+  right: 2.3%;
+  height:31.8%;
+  width:44%;
+  background-color: #dbe4eb;
+  -webkit-clip-path: polygon(12.5% 41%, 100% 0, 0 100%, 0 100%);
+  clip-path: polygon(12.5% 41%, 100% 0, 0 100%, 0 100%);
+}
+.container .chromeSection5 {
+  position: absolute;
+  top: 5.9%;
+  right: 2.3%;
+  height:69.4%;
+  width:20%;
+  background-color: #dbe4eb;
+-webkit-clip-path: polygon(100% 0, 100% 96.3%, 73.5% 100%, 51.1% 61%);
+clip-path: polygon(100% 0, 100% 96.3%, 73.5% 100%, 51.1% 61%);
+}
+.container .chromeSection6 {
+  position: absolute;
+  top:5.9%;
+  right: 2.3%;
+  height:41.95%;
+  width:43.6%;
+  background-color: #c4cace;
+  -webkit-clip-path: polygon(100% 0, 100% -2%, 77% 100%, 0 74.9%, 100% 0);
+  clip-path: polygon(100% 0, 100% -2%, 77% 100%, 0 74.9%, 100% 0);
+}
+h2 {
+  visibility: hidden!important;
+}
